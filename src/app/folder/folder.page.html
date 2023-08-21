@@ -14,8 +14,77 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="container" *ngIf="folder == 'Inicio'">
+    <div class="row">
+      <h1>Noticias</h1>
+      <br>
+      <br>
+      <br>
+      <div class="col-12">
+        <img src="https://placehold.co/600x400">
+        <h2 class="text-center">Título de la noticia</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <hr>
+      </div>
+      <br>
+      <div class="col-12">
+        <img src="https://placehold.co/600x400">
+        <h2 class="text-center">Título de la noticia</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="folder == 'Administrar'">
+    <div class="row">
+      <div class="col-12">
+        <ion-list>
+          <ion-item>
+            <img src="https://placehold.co/25x25" class="img">
+            <ion-label>Noticia 1</ion-label>
+            <ion-icon name="pencil" size="small"></ion-icon>
+            <ion-icon name="trash" size="small"></ion-icon>
+          </ion-item>
+          <ion-item>
+            <img src="https://placehold.co/25x25" class="img">
+            <ion-label>Noticia 2</ion-label>
+            <ion-icon name="pencil" size="small"></ion-icon>
+            <ion-icon name="trash" size="small"></ion-icon>
+          </ion-item>
+          <ion-item>
+            <img src="https://placehold.co/25x25" class="img">
+            <ion-label>Noticia 3</ion-label>
+            <ion-icon name="pencil" size="small"></ion-icon>
+            <ion-icon name="trash" size="small"></ion-icon>
+          </ion-item>
+          <ion-item>
+            <img src="https://placehold.co/25x25" class="img">
+            <ion-label>Noticia 4</ion-label>
+            <ion-icon name="pencil" size="small"></ion-icon>
+            <ion-icon name="trash" size="small"></ion-icon>
+          </ion-item>
+          <ion-item>
+            <img src="https://placehold.co/25x25" class="img">
+            <ion-label>Noticia 5</ion-label>
+            <ion-icon name="pencil" size="small"></ion-icon>
+            <ion-icon name="trash" size="small"></ion-icon>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="folder == 'Iniciar Sesión'">
+    <div class="row">
+      <div class="col-12">
+        <br>
+        <input type="text" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon1">
+        <br>
+        <input type="password" class="form-control" placeholder="Contraseña" aria-label="password" aria-describedby="basic-addon1">
+        <br>
+        
+        <button type="button" class="btn btn-success text-center">Iniciar Sesión</button>
+        
+      </div>
+    </div>
   </div>
 </ion-content>
